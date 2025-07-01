@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Compiler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hybrid Code to EXE Compiler</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="files">Upload Source Files (C++, Python, Rust, JS, C):</label>
+            <input type="file" id="files" name="files" multiple accept=".cpp,.py,.rs,.js,.c">
+            <label for="main_language">Main Language (C++ required):</label>
+            <select id="main_language" name="main_language">
+                <option value="cpp">C++</option>
+            </select>
+            <label for="additional_languages">Additional Languages:</label>
+            <select id="additional_languages" name="additional_languages" multiple>
+                <option value="python">Python</option>
+                <option value="rust">Rust</option>
+                <option value="javascript">JavaScript</option>
+                <option value="c">C</option>
+            </select>
+            <button type="submit">Compile to EXE</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
