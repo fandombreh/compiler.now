@@ -8,16 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Hybrid Code to EXE Compiler</h1>
+        <h1>Multi-Language Code to EXE Compiler</h1>
         <form id="uploadForm" enctype="multipart/form-data">
             <label for="files">Upload Source Files (C++, Python, Rust, JS, C):</label>
             <input type="file" id="files" name="files" multiple accept=".cpp,.py,.rs,.js,.c">
-            <label for="main_language">Main Language (C++ required):</label>
-            <select id="main_language" name="main_language">
-                <option value="cpp">C++</option>
-            </select>
-            <label for="additional_languages">Additional Languages:</label>
-            <select id="additional_languages" name="additional_languages" multiple>
+            <label for="languages">Select Languages Used:</label>
+            <select id="languages" name="languages" multiple>
+                <option value="cpp">C++ (with SDL support)</option>
                 <option value="python">Python</option>
                 <option value="rust">Rust</option>
                 <option value="javascript">JavaScript</option>
